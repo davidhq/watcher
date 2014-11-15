@@ -1,0 +1,22 @@
+---
+
+sites:
+  - name: site1
+    url: site1.com
+  - name: site2
+    url: https://site2.com
+
+user:
+  phone: +386XXXXXXXX
+  email: user@gmail.com
+
+mandrill:
+  user:
+  password:
+
+twilio:
+  number: +1XXXXXXXXXX
+  account_sid:
+  auth_token:
+
+
