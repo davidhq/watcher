@@ -47,13 +47,13 @@ for site in status.keys
     end
   end
   stat = status[site]['status']
-  if bad_status(stat) && (bad_status(status[site]['prev_status']) || local) && !status[site]['reported']
+  if bad_status(stat) && stat != 'timeout' && (bad_status(status[site]['prev_status']) || local) && !status[site]['reported']
     msg += "#{site} (#{stat}) | "
     status[site]['reported'] = true
   end
   if bad_status(stat)
     if stat == 'timeout'
-      down ||= status[site]['count'] >= 5 # 5th consecutive timeout is an alarm because these timeouts happen "for no reason" (random network issues)
+      #down ||= status[site]['count'] >= 5 # 5th consecutive timeout is an alarm since these timeouts happen because of random network issues
     else
       down = true
     end

@@ -6,7 +6,7 @@ class Checker
     Timeout.timeout(75) do
       url = "http://#{url}" unless url =~ /^http/
       status = conn(url).get.status
-      if status == 522 # cloudflare timeout
+      if status == 522 || status == 504 # 522 cloudflare timeout 504 gateway timeout
         'timeout'
       else
         status
