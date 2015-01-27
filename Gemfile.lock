@@ -15,6 +15,7 @@ GEM
     mime-types (2.4.3)
     multi_json (1.10.1)
     multipart-post (2.0.0)
+    nexmo (2.0.0)
     pony (1.11)
       mail (>= 2.0)
     twilio-ruby (3.13.1)
@@ -32,6 +33,7 @@ DEPENDENCIES
   faraday
   faraday_middleware
   json
+  nexmo
   pony
   twilio-ruby
   whenever
