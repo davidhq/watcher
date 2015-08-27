@@ -67,7 +67,7 @@ for site in status.keys
   status[site]['reported'] = false unless bad_status(stat)
 end
 
-puts 'Everything up and running' unless down || local || server
+puts "\nEverything up and running".yellow unless down || local || server
 
 unless msg == ''
   msg = msg.strip.chomp('|')
