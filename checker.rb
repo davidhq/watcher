@@ -19,7 +19,7 @@ class Checker
   rescue Faraday::ConnectionFailed
     'noconn'
   rescue
-    "exception #{$!.message}"
+    "exception: #{$!.class} #{$!.message}"
   end
 
 private
