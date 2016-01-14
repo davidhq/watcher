@@ -1,4 +1,3 @@
 config.yml
-status.json
-deploy
-.deployignore
+statuses.json
+.deploy

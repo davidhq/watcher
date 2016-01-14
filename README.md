@@ -29,3 +29,7 @@ It's advisable to also run checks from local machine esp. if you have only one s
 You can use something like `Keyboard Maestro` like this: http://cl.ly/image/303v0A3G361Q
 
 `local` argument makes it so that there is no output unless there are problems, also sms is not sent, only email.
+
+## Disable sites
+
+Add `disabled: false` to `config.yml`
